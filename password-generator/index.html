@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+      <h1>Password Generator</h1>
+
+    <div class="password-field">
+      <input type="text" id="password" readonly>
+      <button id="copy_pass" class="copy-btn" type="button">Copy</button>
+    </div>
+
+    <div class="setting">
+
+      <div class="setting-row">
+        <div class="length-info">
+          <label for="slider">Password length</label>
+          <span id="length-value">12</span>
+        </div>
+          <input id="slider" type="range" min="8" max="18" step="1">
+      </div>
+
+      <div class="setting-row">
+        <input id="upper" type="checkbox">
+        <label for="upper">Uppercase (A-Z)</label>
+      </div>
+
+      <div class="setting-row">
+        <input id="lower" type="checkbox">
+        <label for="lower">Lowercase (a-z)</label>
+      </div>
+
+      <div class="setting-row">
+        <input id="numbers" type="checkbox">
+        <label for="numbers">Numbers (0-9)</label>
+      </div>
+
+      <div class="setting-row">
+        <input id="symbols" type="checkbox">
+        <label for="symbols">Symbols</label>
+      </div>
+      
+    </div>
+    <div class="control_buttons">
+      <button id="generate" type="button">Generate</button>
+    </div>
+    <div class="strength">
+      <span class="strength-text">Strength</span>
+      <div class="strength-bar">
+        <div id="strength-fill"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
