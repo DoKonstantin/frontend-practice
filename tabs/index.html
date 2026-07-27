@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tabs-container">
+
+    <div class="tabs">
+
+      <button data-tab="about" class="tab active">
+        About
+      </button>
+
+      <button data-tab="features" class="tab">
+        Features
+      </button>
+
+      <button data-tab="contact" class="tab">
+        Contact
+      </button>
+
+    </div>
+
+    <div class="content">
+
+      <div data-tab-content="about" class="tab-panel active">
+        <h2>About</h2>
+        <p>This is the About section.</p>
+      </div>
+
+      <div data-tab-content="features" class="tab-panel">
+        <h2>Features</h2>
+        <p>This is the Features section.</p>
+      </div>
+
+      <div data-tab-content="contact" class="tab-panel">
+        <h2>Contact</h2>
+        <p>This is the Contact section.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
